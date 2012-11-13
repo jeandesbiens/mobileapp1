@@ -1,9 +1,33 @@
 <!DOCTYPE html>
 <html>
+<head>
+<script src="http://code.angularjs.org/angular-1.0.1.min.js"></script>
+
+<script>
+function DataCtrl($scope) {
+console.log("Dans le DataCtrl... doing some work...");
+	  $scope.stats= [
+	    {nom:'Jean Desbiens'},
+	    {nom:'Pierre-Jean Jacques'},
+	    {nom:'Marie Carmen'}];
+	}
+</script>
+
+</head>
 <body>
 
 <div class='header'><h1>Accueil</h1></div>
 <p>Application mobile de démonstration</p>
+
+<div ng-app>
+  <div ng-controller="DataCtrl">
+    <ul class="unstyled">
+      <li ng-repeat="stat in stats">
+        {{stat.nom}}
+      </li>
+    </ul>
+  </div>
+</div>
 
 
 </body>
