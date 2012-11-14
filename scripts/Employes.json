@@ -1,0 +1,228 @@
+
+{
+	"employes":
+		[
+			{
+				"nom":"Smith",
+				"prenom":"John", 
+				"cip" : "xu2023", 
+				"role" : "Inspecteur",
+				"superviseur" : "cu2020" ,
+				"activite_total" : "32",
+				"activite_effectue" : "35"
+			},
+			{
+				"nom":"Murdock",
+				"prenom":"Joseph", 
+				"cip" : "cu2020", 
+				"role" : "Superviseur",
+				"superviseur" : "n/a",
+				"activite_total" : "50",
+				"activite_effectue" : "34"
+			},
+			{
+				"nom":"Jonathan",
+				"prenom":"Vaillancourt", 
+				"cip" : "cs2175", 
+				"role" : "Insepcteur",
+				"superviseur" : "cu2020",
+				"activite_total" : "50",
+				"activite_effectue" : "54"
+			},
+			{
+				"nom":"Tremblay",
+				"prenom":"Pierre", 
+				"cip" : "su2022", 
+				"role" : "Inspecteur",
+				"superviseur" : "cu2020",
+				"activite_total" : "20",
+				"activite_effectue" : "10"
+			}
+		], 
+	"activites":
+		[
+			{
+				"id": "1",
+				"location" : "10,10", 
+				"nom":"Aérien", 
+				"date_debut" : "11/12/2011", 
+				"date_fin" : "15/12/2011", 
+				"cip_inspecteur" : "xu2023", 
+				"cip_inspecte" : "cd2000", 	
+				"adresse_inspection" : "123, rue Gauchetiere"
+			}, 
+			{
+				"id": "2",
+				"location" : "10,10", 
+				"nom":"Souterrain", 
+				"date_debut" : "11/09/2012", 
+				"date_fin" : "15/09/2012", 
+				"cip_inspecteur" : "xu2023", 
+				"cip_inspecte" : "cd1234", 	
+				"adresse_inspection" : "123, rue Gauchetiere"
+			}, 
+			{
+				"id": "3",
+				"location" : "10,10", 
+				"nom":"Civil", 
+				"date_debut" : "07/07/2012", 
+				"date_fin" : "15/07/2012", 
+				"cip_inspecteur" : "su2022", 
+				"cip_inspecte" : "cd2300", 	
+				"adresse_inspection" : "123, rue Gauchetiere"
+			}, 
+					
+			{
+				"id" : "4",
+				"location" : "30,15", 
+				"nom":"Aérien", 
+				"date_debut" : "10/02/2012", 
+				"date_fin" : "25/02/2012", 
+				"cip_inspecteur" : "xu2023", 
+				"cip_inspecte" : "cd2000", 	
+				"adresse_inspection" : "789, rue Acadie"
+			}, 
+			{
+				"id": "5",	
+				"location" : "30,15", 
+				"nom":"Souterrain", 
+				"date_debut" : "11/09/2012", 
+				"date_fin" : "15/09/2012", 
+				"cip_inspecteur" : "xu2023", 
+				"cip_inspecte" : "cd1234", 	
+				"adresse_inspection" : "789, rue Acadie"
+			}, 
+						
+			{	
+				"id": "6",
+				"location" : "30,15", 
+				"nom":"Civil", 
+				"date_debut" : "07/07/2012", 
+				"date_fin" : "15/07/2012", 
+				"cip_inspecteur" : "su2022", 
+				"cip_inspecte" : "cd2300", 	
+				"adresse_inspection" : "789, rue Acadie"
+			}
+		], 
+	"sous_activites":
+		[
+			{
+				"id_activite": "1", 
+				"id_question": "1", 
+				"nom": "Habillement"	
+			},
+			{
+				"id_activite": "1", 
+				"id_question": "2", 
+				"nom": "Equipement"	
+			},
+			{
+				"id_activite": "1", 
+				"id_question": "3", 
+				"nom": "Vehicule"	
+			},
+			{
+				"id_activite": "2", 
+				"id_question": "4", 
+				"nom": "Habillement"	
+			},
+			{
+				"id_activite": "2", 
+				"id_question": "5", 
+				"nom": "Equipement"	
+			},
+			{
+				"id_activite": "2", 
+				"id_question": "6", 
+				"nom": "Vehicule"	
+			}, 
+			{
+				"id_activite": "3", 
+				"id_question": "7", 
+				"nom": "Habillement"	
+			},
+			{
+				"id_activite": "3", 
+				"id_question": "8", 
+				"nom": "Equipement"	
+			},
+			{
+				"id_activite": "3", 
+				"id_question": "9", 
+				"nom": "Vehicule"	
+			}
+		],		
+		"questions":
+		[
+			{
+				"id": "1", 
+				"etat": "Non-observe", 
+				"no_question": "MOB2244"
+			}, 
+			{
+				"id": "2", 
+				"etat": "Conforme", 
+				"no_question": "MOB2245"
+			}, 
+			{
+				"id": "3", 
+				"etat": "Non-conforme", 
+				"no_question": "MOB2246"
+			}, 
+			{
+				"id": "4", 
+				"etat": "Non-observe", 
+				"no_question": "MOB2244"
+			}, 
+			{
+				"id": "5", 
+				"etat": "Conforme", 
+				"no_question": "MOB4444"
+			}, 
+			{
+				"id": "6", 
+				"etat": "Non-conforme", 
+				"no_question": "MOB3333"
+			}, 
+			{
+				"id": "7", 
+				"etat": "Non-observe", 
+				"no_question": "MOB2222"
+			}, 
+			{
+				"id": "8", 
+				"etat": "Conforme", 
+				"no_question": "MOB1111"
+			}, 
+			{
+				"id": "9", 
+				"etat": "Non-conforme", 
+				"no_question": "MOB2255"
+			} 	
+		],
+		"non_conformite":
+		[
+			{
+				"id_question":"3",
+				"date_inspection":"11/12/2011",
+				"date_reinspection":"12/12/2011",
+				"statut":"Fermé",
+				"Photo":"image1234.jpg",
+				"code_barre":"0010100010101010",
+				"texte": "Le véhicule était en marche",
+				"son": "null",
+				"cip_inspecte": "cd2000"
+			},
+			{
+				"id_question":"6",
+				"date_inspection":"12/09/2012", 
+				"date_reinspection":"13/09/2011",
+				"statut":"Fermé",
+				"Photo":"image1235.jpg",
+				"code_barre":"0011100011101010",
+				"texte": "Le véhicule était en marche",
+				"son": "null",
+				"cip_inspecte": "cd2300"
+			}
+		]
+}

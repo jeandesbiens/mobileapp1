@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="http://code.angularjs.org/angular-1.0.1.min.js"></script>
+	<meta charset="utf-8">
+	
+	<link href="bb.css" rel="stylesheet" type="text/css">
+	<script src="http://code.angularjs.org/angular-1.0.1.min.js"></script>
 
+	<script>
+	function DataCtrl($scope) {
+	//console.log("Dans le DataCtrl... doing some work...");
+		  $scope.stats= [
+		    {nom:'Jean Desbiens',inspPrevues:50,inspDelta:-10},
+		    {nom:'Pierre-Jean Jacques',inspPrevues:20,inspDelta:0},
+		    {nom:'Marie Carmen',inspPrevues:60,inspDelta:40}];
+		}
+	</script>
+	<!-- 
 <script>
-function DataCtrl($scope) {
-console.log("Dans le DataCtrl... doing some work...");
-	  $scope.stats= [
-	    {nom:'Jean Desbiens'},
-	    {nom:'Pierre-Jean Jacques'},
-	    {nom:'Marie Carmen'}];
-	}
-</script>
-
+	function DataCtrl($scope) {
+	//console.log("Dans le DataCtrl... doing some work...");
+		  $scope.stats= [
+		    {nom:'Jean Desbiens'},
+		    {nom:<a href="rap_pourcent_non_conf.html"> Pourcentage des non-conformités </a>}];
+		}
+	</script>
+ -->
 </head>
 <body>
 
 <div class='header'><h1>Accueil</h1></div>
-<p>Application mobile de d�monstration</p>
+<p>Application mobile de démonstration</p>
 
 <div ng-app>
   <div ng-controller="DataCtrl">
     <ul class="unstyled">
       <li ng-repeat="stat in stats">
-        {{stat.nom}}
+       <span class=nom> {{stat.nom}}</span>
+        <progress max={{stat.inspPrevues}} value={{stat.inspPrevues+stat.inspDelta}} ></progress> 
+        <span class=inspPrevues> {{stat.inspPrevues}}</span>
+        <span class=inspDelta value={{stat.inspDelta}}> {{stat.inspDelta}}</span>
       </li>
     </ul>
   </div>
